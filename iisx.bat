@@ -11,6 +11,6 @@ if errorlevel 1 (
 )
 
 for /L %%i in (44300,1,44399) do (
-	netsh http delete urlacl url=https://flairstech.local:%%i/>nul
-	netsh http add urlacl url=https://flairstech.local:%%i/ user=everyone
+	netsh http delete urlacl url=https://localhost:%%i/>nul
+	netsh http add urlacl url=https://localhost:%%i/ user=everyone
 )
